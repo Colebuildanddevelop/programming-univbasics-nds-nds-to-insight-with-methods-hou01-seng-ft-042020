@@ -29,3 +29,5 @@ def directors_totals(nds)
   end
   director_leaderboard
 end
+
+puts diretors_totals(directors_database)
