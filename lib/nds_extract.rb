@@ -24,6 +24,7 @@ def directors_totals(nds)
   index = 0 
   while nds[index] do 
     director_hash = nds[index]
+    director_name = director_hash[:name]
     director_leaderboard[director_name] = gross_for_director(director_hash)
     index += 1 
   end
