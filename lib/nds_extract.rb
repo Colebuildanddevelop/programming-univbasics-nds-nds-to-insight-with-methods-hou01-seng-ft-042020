@@ -20,16 +20,11 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-
   director_leaderboard = {}
   index = 0 
   while nds[index] do 
     director_hash = nds[index]
-    puts director_hash
-    
-    director_name = director_hash[:name]
-
-    director_leaderboard[director_name] = gross_for_director
+    director_leaderboard[director_name] = gross_for_director(director_hash)
     index += 1 
   end
   director_leaderboard
