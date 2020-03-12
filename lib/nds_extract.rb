@@ -29,7 +29,7 @@ def directors_totals(nds)
     
     director_name = director_hash[:name]
 
-    director_leaderboard[director_name] = total_gross
+    director_leaderboard[director_name] = gross_for_director
     index += 1 
   end
   director_leaderboard
